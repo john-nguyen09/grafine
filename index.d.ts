@@ -34,6 +34,7 @@ declare module "grafine" {
     }
     export class point {
         uuid: Number;
+        _type: string;
         constructor(db: graph);
         export(): any;
         import(data: any): point;
